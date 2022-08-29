@@ -50,7 +50,7 @@ this.cityList = {
     })
     return (
       <div id="main">
-        {persons}
+        <ol>{persons}</ol>
       </div>
     )
   }
