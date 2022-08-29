@@ -41,7 +41,11 @@ this.cityList = {
 
   render() {
     let persons = this.cityList.persons.map((p)=>{
-        return <li>{p.name}</li>
+        return(
+          <>
+          <li key = "location1">{p.name}</li>
+          <li key = "location2">{p.country}</li>
+          </>
     })
     return (
       <div id="main">
