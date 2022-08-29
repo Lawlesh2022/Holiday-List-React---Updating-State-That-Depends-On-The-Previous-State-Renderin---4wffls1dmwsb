@@ -43,8 +43,7 @@ this.cityList = {
     let persons = this.cityList.persons.map((p)=>{
         return(
           <>
-          <li key = "location1">{p.name}</li>
-          <li key = "location2">{p.country}</li>
+          <li key = "location1">{p.name}.{p.country}</li>         
           </>
     })
     return (
