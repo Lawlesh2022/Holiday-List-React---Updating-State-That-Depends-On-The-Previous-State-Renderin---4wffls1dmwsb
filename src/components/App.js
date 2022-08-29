@@ -6,7 +6,8 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.cityList = [{ name: 'Goa', country: 'India' },
+this.cityList = {
+  persons: [{ name: 'Goa', country: 'India' },
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
@@ -35,12 +36,16 @@ class App extends Component {
     { name: 'Mount Abu', country: 'India' },
     { name: 'Tirupati', country: 'India' },
     ]
+    }
   }
 
   render() {
+    let persons = this.cityList.persons.map((p)=>{
+        return <li>{p.name}</li>
+    })
     return (
       <div id="main">
-        {/* Do not remove the main div */}
+        {persons}
       </div>
     )
   }
